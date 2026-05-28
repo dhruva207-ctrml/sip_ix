@@ -19,6 +19,17 @@ Deploy to Vercel:
 2. In Vercel, import the project and set Build Command to `npm run build` and Output Directory to `dist`.
 3. Deploy — Vercel will build and host the site.
 
+Deploy to GitHub Pages:
+1. Push the repo to GitHub.
+2. In `app`, install dependencies with `npm install`.
+3. Run `npm run deploy` to publish the `dist` folder to the `gh-pages` branch.
+4. In GitHub Pages settings, set the site source to the `gh-pages` branch and use the root folder.
+
+Custom domain note:
+- Use a valid DNS hostname such as `sipxi.com` or `www.sipxi.com`.
+- Do not use repo names, underscores, spaces, or invalid hostnames like `sip_xi`.
+- If you do not have a registered domain, leave the custom domain field blank and use the default GitHub Pages URL.
+
 CI:
 - A GitHub Actions workflow is included at `.github/workflows/ci.yml` which runs `npm ci` and `npm run build` on pushes and PRs.
 

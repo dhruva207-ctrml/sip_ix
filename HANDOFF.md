@@ -8,7 +8,7 @@ This checklist prepares the app for hosting on Vercel and handoff to ops.
   - Build Command: `npm run build`
   - Output Directory: `dist`
   - Environment variables: (none required for static site; add if using APIs)
-- [ ] Add DNS records and configure custom domain in Vercel.
+- [ ] Add DNS records and configure custom domain in Vercel. If using GitHub Pages instead, only configure a registered hostname and do not use invalid names such as `sip_xi`.
 - [ ] Confirm SSL (Vercel provides automatic TLS).
 - [ ] Add environment secrets in Vercel (if any): e.g., `API_KEY`, `ANALYTICS_ID`.
 - [ ] Confirm CI passes on main branch (`.github/workflows/ci.yml`).

@@ -2,7 +2,7 @@ import { MapPin, Plus, Eye } from 'lucide-react';
 import { useApp } from '../store';
 import Badge from './Badge';
 import type { Product } from '../types';
-import { KeyboardEvent } from 'react';
+import type { KeyboardEvent } from 'react';
 
 interface ProductCardProps {
   product: Product;
